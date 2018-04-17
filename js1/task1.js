@@ -29,7 +29,6 @@ function color(){
         //检查数组中存不存在num[a]如果存在则循环
         temp.push(num[a]);
         //把（num[a]）放到一个空数组中去
-        console.log(num[a]);
     }
     box[num[0]].style.backgroundColor = arr();
     box[num[1]].style.backgroundColor = arr();
