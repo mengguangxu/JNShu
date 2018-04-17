@@ -42,5 +42,5 @@ function start(){
 }
 function end(){
     clearInterval(w);
-    clearColor();
+    clearColor();re
 }
