@@ -13,6 +13,7 @@ body{
 }
 input {
     width: 100%;
+    height: 6vh;
     margin-top: 1rem;
     background-color: #fff;
     color: #ffa600;
