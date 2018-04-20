@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20061d8b-8b91-4a25-915d-89ff5df9465c" name="Default" comment="js">
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/css/task2.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/html/task2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/beijing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/fanhui.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/guan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/img1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/img2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/img3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/img4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/kai.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/kaiguan.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/mulu.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/san.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/image/shu.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/js2/js/task2.js" />
+    <list default="true" id="20061d8b-8b91-4a25-915d-89ff5df9465c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/js/js2/css/task2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/js2/html/task2-2.html" afterPath="$PROJECT_DIR$/js/js2/html/task2-2.html" />
+      <change beforePath="$PROJECT_DIR$/js/js2/html/task2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/js2/js/task2.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,9 +19,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="task2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/js2/js/task2.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="task2-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/js2/html/task2-1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task2-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/js2/html/task2-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task2-1.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/js2/css/task2-1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -41,21 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/js2/html/task2.html">
+      <file leaf-file-name="task2-1.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/js2/js/task2-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task2.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/js2/css/task2.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            <state relative-caret-position="44">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -92,6 +92,12 @@
         <option value="$PROJECT_DIR$/js/js2/task2.html" />
         <option value="$PROJECT_DIR$/js/js2/css/task2.css" />
         <option value="$PROJECT_DIR$/js/js2/html/task2.html" />
+        <option value="$PROJECT_DIR$/js/js2/html/task2-3.html" />
+        <option value="$PROJECT_DIR$/js/js2/css/task2-2.css" />
+        <option value="$PROJECT_DIR$/js/js2/css/task2-3.css" />
+        <option value="$PROJECT_DIR$/js/js2/html/task2-2.html" />
+        <option value="$PROJECT_DIR$/js/js2/html/task2-1.html" />
+        <option value="$PROJECT_DIR$/js/js2/js/task2-1.js" />
       </list>
     </option>
   </component>
@@ -107,7 +113,7 @@
     <option name="height" value="1044" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -120,58 +126,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="js2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="js2" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="js2" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JNShu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JNShu" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="js2" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -179,6 +134,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,7 +165,8 @@
       <workItem from="1523927212158" duration="4797000" />
       <workItem from="1523934623811" duration="17078000" />
       <workItem from="1524015391803" duration="19841000" />
-      <workItem from="1524103114553" duration="23173000" />
+      <workItem from="1524103114553" duration="23612000" />
+      <workItem from="1524188362598" duration="5277000" />
     </task>
     <task id="LOCAL-00001" summary="js">
       <created>1523844473604</created>
@@ -309,11 +266,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524146976582</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="js">
+      <created>1524157140797</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1524157140797</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89764000" />
+    <option name="totallyTimeSpent" value="95480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1056" extended-state="6" />
@@ -354,6 +318,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/js2/js/task2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/css/task2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/html/task2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js1/task1.html" />
     <entry file="file://$PROJECT_DIR$/js1/task1.css" />
     <entry file="file://$PROJECT_DIR$/js1/task1.js" />
@@ -407,7 +395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4136">
           <caret line="188" column="1" lean-forward="false" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -415,7 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -423,25 +409,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/新建文件夹/模板.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/新建文件夹/模板.html" />
     <entry file="file://$USER_HOME$/Desktop/新建文件夹/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="1" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -449,7 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="25" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="17" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -465,7 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="71" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -473,7 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-770">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,34 +453,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="64" column="76" lean-forward="true" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/js2/task2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/js2/task2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/js2/task2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/task2.css" />
+    <entry file="file://$PROJECT_DIR$/js/js2/task2.js" />
+    <entry file="file://$PROJECT_DIR$/js/js2/task2.html" />
     <entry file="file://$PROJECT_DIR$/js/js2/js/task2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -517,18 +467,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/js2/css/task2.css">
+    <entry file="file://$PROJECT_DIR$/js/js2/html/task2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        <state relative-caret-position="88">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/js2/html/task2.html">
+    <entry file="file://$PROJECT_DIR$/js/js2/css/task2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/html/task2-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/css/task2-3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/css/task2-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/html/task2-2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/css/task2-1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/html/task2-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/js2/js/task2-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
