@@ -4,6 +4,6 @@ function back(){
         window.location.href="../html/task2-1.html";
     }
     else {
-        return null;
+        return nulla;
     }
 }
