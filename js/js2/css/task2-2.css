@@ -17,12 +17,14 @@
      align-items: center;
  }
  .icon-left {
+     display: block;
      width: .2rem;
      height: .2rem;
      transform: rotate(45deg);
      border: .03rem solid #fff;
      border-top: none;
      border-right: none;
+     cursor:pointer;
  }
  h6 {
      font-size: .2rem;
