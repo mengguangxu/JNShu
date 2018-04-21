@@ -38,7 +38,7 @@ nav {
 
 .title-word a {
   font-size: .2rem;
-  color: #9A9A9A;
+  color: #b4b4b4;
   text-decoration: none; }
 
 .title-mark {
@@ -98,7 +98,9 @@ main {
   width: 90%;
   height: 1rem;
   background: #69D1E9;
-  margin: .2rem 0; }
+  margin: .2rem 0;
+  cursor: pointer;
+}
 
 .box a {
   text-decoration: none; }
