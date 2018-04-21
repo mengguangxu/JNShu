@@ -34,7 +34,8 @@ nav {
   margin-top: .6rem; }
 
 .title-word {
-  font-size: .2rem; }
+  font-size: .2rem;
+  cursor: pointer;}
 
 .title-word a {
   font-size: .2rem;

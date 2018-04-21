@@ -33,11 +33,11 @@
                         <div class="top-allot">
                             <div class="top-box1">
                                 <div></div>
-                                <span>杀 &nbsp;手 &nbsp;0 &nbsp;人</span>
+                                <span>杀 手 <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')"  placeholder="0" maxlength="2"/> 人</span>
                             </div>
                             <div class="top-box2">
                                 <div></div>
-                                <span>平 &nbsp;民 &nbsp;0 &nbsp;人</span>
+                                <span>平 民 <input type="text" onkeyup="value=value.replace(/[^\d]/g,'')"  placeholder="0" maxlength="2"/> 人</span>
                             </div>
                         </div>
                         <div class="top-bt">
@@ -65,7 +65,12 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="bottom">
-                    <input type="range" min="4" max="18">
+                    <span>玩家人数&nbsp;<input type="text" onkeyup="value=value.replace(/[^\d]/g,'')"  placeholder="4" maxlength="2"/>&nbsp;人</span>
+                    <div class="bottom-box">
+                        <input type="button" class="img7">
+                        <input type="range" min="4" max="18" step="1">
+                        <input type="button" class="img8">
+                    </div>
                 </div>
             </div>
         </div>
