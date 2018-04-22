@@ -116,6 +116,7 @@
  }
  .top-bt a{
      text-decoration: none;
+     cursor: pointer;
  }
  .top-bt a:hover {
      text-decoration: none;
@@ -141,10 +142,11 @@
      margin-bottom: .1rem;
      font-family: "宋体", sans-serif;
      font-size: .17rem;
-     color: #f0f0f0;
+     color: #b4b4b4;
      border: none;
      border-bottom: 1px solid #b4b4b4;
      outline:none;
+     text-decoration: none;
  }
  .content input::placeholder {
      font-family: "宋体", sans-serif;
@@ -164,7 +166,7 @@
      font-size: .17rem;
      font-family: "宋体", sans-serif;
  }
- .bottom span input[type="text"] {
+ .bottom span input {
      width: .2rem;
      height: 25px;
      color: #fab344;
