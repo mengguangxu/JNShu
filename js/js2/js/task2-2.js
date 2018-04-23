@@ -92,7 +92,6 @@ function start(){
     if(playerNumber==inputNumber.value){
         window.location.href = "../html/task2-3.html";
     }else {
-        // window.location.href = "../html/task2-3.html";
         alert("请分配玩家身份");
     }
 }
