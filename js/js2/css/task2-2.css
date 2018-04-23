@@ -79,27 +79,20 @@
      margin-right: .07rem;
      background-color: #fab344;
  }
+ .top-box1 p,
+ .top-box2 p {
+     margin: 0;
+     color: #000;
+     font-size: .2rem;
+     font-family: "宋体",sans-serif;
+ }
  .top-box1 span,
  .top-box2 span {
-     font-size: .17rem;
-     color: #b4b4b4;
- }
- .top-box1 input[type="text"],
- .top-box2 input[type="text"] {
-     width: .1rem;
-     height: 25px;
-     color: #b4b4b4;
-     font-family: "宋体", sans-serif;
-     font-size: .2rem;
+     padding: 0 .1rem;
      text-align: center;
-     border: none;
-     outline: none;
- }
- .top-box1 input[type="text"]::placeholder,
- .top-box2 input[type="text"]::placeholder {
-     font-family: "宋体", sans-serif;
+     color: #000;
      font-size: .2rem;
-     color: #b4b4b4;
+     font-family: "宋体",sans-serif;
  }
  .top-box2 div{
      width: 8px;

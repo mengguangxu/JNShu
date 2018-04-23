@@ -1,8 +1,10 @@
 var inputNumber = document.getElementById("inputNumber");
+
 var rangeNumber = document.getElementById("rangeNumber");
 var killer = document.getElementById("killer");
 var people = document.getElementById("people");
 inputNumber.value = 4;
+inputNumber.value=rangeNumber.value;
 
 //返回首页
 function back(){
@@ -33,7 +35,8 @@ function getNumber(){
         rangeNumber.value=inputNumber.value;
     }
     else{
-        alert("请输入玩家人数");
+        alert("请输入正确玩家人数，人数为4-18人。");
+        inputNumber.value=4;
     }
 }
 //滚动条改变玩家人数随着改变
@@ -75,9 +78,21 @@ function push(){
                 y=4;
                 w=x-y;
             }
-    killer.innerHTML="y";
-    people.innerHTML="w";
-    sessionStorage.getItem("people");
-    sessionStorage.setItem("killer", "y");
-    sessionStorage.setItem("people", "z");
+    killer.innerHTML=y;
+    people.innerHTML=w;
+    sessionStorage.setItem("killer", y);
+    sessionStorage.setItem("people", w);
+}
+function start(){
+    var a = sessionStorage.getItem("killer");
+    var b = sessionStorage.getItem("people");
+    var playerNumber=parseInt(a)+parseInt(b);
+    console.log(inputNumber.value);
+    console.log(playerNumber);
+    if(playerNumber==inputNumber.value){
+        window.location.href = "../html/task2-3.html";
+    }else {
+        // window.location.href = "../html/task2-3.html";
+        alert("请分配玩家身份");
+    }
 }
