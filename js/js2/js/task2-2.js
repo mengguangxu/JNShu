@@ -2,9 +2,8 @@ var inputNumber = document.getElementById("inputNumber");
 var rangeNumber = document.getElementById("rangeNumber");
 var killer = document.getElementById("killer");
 var people = document.getElementById("people");
-var x=inputNumber.value;
-var y=killer.value;
-var z=people.value;
+inputNumber.value = 4;
+
 //返回首页
 function back(){
     var revert=confirm("确定要返回首页么？");
@@ -30,8 +29,8 @@ document.onkeydown=function(event){
 };
 //玩家人数的输入框与滚动条同步
 function getNumber(){
-    if(inputNumber.value>=4&&inputerNumber.value<=18){
-        inputNumber.value=rangeNumber.value;
+    if(inputNumber.value>=4&&inputNumber.value<=18){
+        rangeNumber.value=inputNumber.value;
     }
     else{
         alert("请输入玩家人数");
@@ -43,40 +42,42 @@ function change(){
 }
 //减号按钮与滚动条同步
 function btLeft(){
-    rangeNumber.value--;
-    if(inputNumber.value<=4) {
+    inputNumber.value--;
+    rangeNumber.value=inputNumber.value;
+    console.log(inputNumber.value);
+    if(inputNumber.value<4) {
         alert("人数不足，请凑好再来");
+        inputNumber.value = 4;
     }
-    else{
-        inputNumber.value=rangeNumber.value;
-    }
+
 }
 //加号按钮与滚动条同步
 function btRight(){
-    rangeNumber.value++;
-    if(inputNumber.value>=18) {
+    inputNumber.value++;
+    rangeNumber.value=inputNumber.value;
+    if(inputNumber.value>18) {
         alert("人数太多，请分开游戏");
+        inputNumber.value = 18;
     }
-    else{
-        inputNumber.value=rangeNumber.value;
-    }
+
 }
 function push(){
+    var x=inputNumber.value;
+    var y=killer.value;
+    var w=people.value;
     if (x<5){
         y=1;
-        z=x-y;
-    }else{
-        if (x<10){
+        w=x-y;
+    }else if (x<10){
             y=2;
-            z=x-y;
-        }else{
-            if (x<18){
+            w=x-y;
+        }else if (x<=18){
                 y=4;
-                z=x-y;
+                w=x-y;
             }
-        }
-    }
-    killer.innerHTML=y;
-    people.innerHTML=z;
-    console.log(z)
+    killer.innerHTML="y";
+    people.innerHTML="w";
+    sessionStorage.getItem("people");
+    sessionStorage.setItem("killer", "y");
+    sessionStorage.setItem("people", "z");
 }
