@@ -1,11 +1,8 @@
 var inputNumber = document.getElementById("inputNumber");
-
 var rangeNumber = document.getElementById("rangeNumber");
 var killer = document.getElementById("killer");
 var people = document.getElementById("people");
-inputNumber.value = 4;
 inputNumber.value=rangeNumber.value;
-
 //返回首页
 function back(){
     var revert=confirm("确定要返回首页么？");
@@ -64,6 +61,7 @@ function btRight(){
     }
 
 }
+//设置杀手和平民人数
 function push(){
     var x=inputNumber.value;
     var y=killer.value;
@@ -80,16 +78,15 @@ function push(){
             }
     killer.innerHTML=y;
     people.innerHTML=w;
-    sessionStorage.setItem("killer", y);
-    sessionStorage.setItem("people", w);
+    sessionStorage.setItem("killer", JSON.stringify(y));//JSON.stringify(y)把数值转换为字符串，sessionStorage只储存字符串
+    sessionStorage.setItem("people",JSON.stringify(w));//同上
+    sessionStorage.setItem("inputNumber",JSON.stringify(x));
 }
 function start(){
-    var a = sessionStorage.getItem("killer");
-    var b = sessionStorage.getItem("people");
-    var playerNumber=parseInt(a)+parseInt(b);
-    console.log(inputNumber.value);
-    console.log(playerNumber);
-    if(playerNumber==inputNumber.value){
+    var a = JSON.parse(sessionStorage.getItem("killer"));//JSON.parse(sessionStorage.getItem("killer"))把储存的数据获取出来，取出来的数据是字符串，需要把它变成数值。
+    var b = JSON.parse(sessionStorage.getItem("people"));
+    var player=a+b;
+    if(player==inputNumber.value){
         window.location.href = "../html/task2-3.html";
     }else {
         alert("请分配玩家身份");
