@@ -78,7 +78,7 @@ function push(){
             }
     killer.innerHTML=y;
     people.innerHTML=w;
-    sessionStorage.setItem("killer", JSON.stringify(y));//JSON.stringify(y)把数值转换为字符串，sessionStorage只储存字符串
+    sessionStorage.setItem("killer", JSON.stringify(y));//JSON.stringify(y)把数值转换为JSON字符串，sessionStorage只储存字符串
     sessionStorage.setItem("people",JSON.stringify(w));//同上
     sessionStorage.setItem("inputNumber",JSON.stringify(x));
 }
