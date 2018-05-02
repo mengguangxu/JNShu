@@ -39,13 +39,13 @@ $(document).ready(function(){
 
     $('.back-arrow').click(function(){
         var i = confirm('确定要返回角色页面吗？');
-        if (i == true){
+        if (i === true){
             location.href = '../html/task2-3.html';
         }
     });
     $('.close').click(function(){
         var i = confirm('确定要返回首页吗？');
-        if (i == true){
+        if (i === true){
             sessionStorage.clear();
             location.href = '../html/task2-1.html';
         }

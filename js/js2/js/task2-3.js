@@ -21,7 +21,7 @@ function shuffle(array){
         i = Math.floor(Math.random()*n--);
         //与当前元素进行交换
         t = array[n];//把数组最后的那个元素赋值给t
-        array[n] = array[i];//把抽出来的那个元素与最后边的元素
+        array[n] = array[i];//把抽出来的那个元素与最后边的元素交换
         array[i] = t;
     }
     return array;

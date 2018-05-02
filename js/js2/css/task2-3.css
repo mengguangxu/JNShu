@@ -29,12 +29,14 @@ body {
     height: .45rem;
     background: url(../image/bi.png) no-repeat;
     background-size: 80%;
+    cursor: pointer;
 }
 .close {
     width: .36rem;
     height: .36rem;
     background: url(../image/fanhui.png) no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 
@@ -80,10 +82,10 @@ body {
     background: url(../image/img11.png) no-repeat center center/2.22rem 2.22rem;;
 }
 .main-top-text {
-    font-size: .4rem;
-    color: #333;
     text-align: center;
     margin: .2rem auto 0 auto;
+    font-size: .4rem;
+    color: #29bde0;
 }
 .main-bottom {
     width: 84%;
@@ -93,4 +95,5 @@ body {
     font-size: .48rem;
     color: #fff;
     text-align: center;
+    cursor: pointer;
 }
