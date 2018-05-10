@@ -81,6 +81,7 @@ body {
 .content-bottom {
     width: 100%;
     height: .3rem;
+    padding-top: .2rem;
     background-image: url(../image/img1.png);
     background-repeat: no-repeat;
     background-size: .3rem .3rem;
@@ -96,4 +97,5 @@ body {
     font-size: .48rem;
     color: #fff;
     text-align: center;
+    cursor: pointer
 }

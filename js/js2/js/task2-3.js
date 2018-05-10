@@ -1,9 +1,9 @@
 
-var state = 1;//用来分辨当前是皇上页面还是身份页面
+var state = 1;//用来分辨当前是皇上页面还是身份页面,1为小女孩页面
 var player = [];//造一个player来装一个空数组
-var killer = sessionStorage.getItem('killer');//取出传过来的杀手的数量
-// console.log(killer);
-var people = sessionStorage.getItem('people');//取出传过来的平民的数量
+var killer = JSON.parse(sessionStorage.getItem('killer'));//取出传过来的杀手的数量
+console.log(killer);
+var people = JSON.parse(sessionStorage.getItem('people'));//取出传过来的平民的数量
 var cycle = 1;//最上面的圆圈数字
 for (i=0;i<killer;i++){//将“杀手”push到新的数组，有几个杀手就push进几个“杀手”
     player.push('杀手');
@@ -13,16 +13,16 @@ for (i=0;i<people;i++){//将“平民”push到新的数组，有几个平民就
 }
 // console.log(player);
 function shuffle(array){
-    var n = array.length;
-    var t,i;
+    var w = array.length;
+    var x,y;
     //随机选取一个元素
-    while(n){
+    while(w){
         //随机选取一个数
-        i = Math.floor(Math.random()*n--);
+        y = Math.floor(Math.random()*w--);
         //与当前元素进行交换
-        t = array[n];//把数组最后的那个元素赋值给t
-        array[n] = array[i];//把抽出来的那个元素与最后边的元素交换
-        array[i] = t;
+        x = array[w];//把数组最后的那个元素赋值给x
+        array[w] = array[y];//把抽出来的那个元素与最后边的元素交换
+        array[y] = x;
     }
     return array;
 }
@@ -34,7 +34,7 @@ sessionStorage.setItem('player',JSON.stringify(player));//把打乱的状态储�
 
 
 $('.main-bottom').on('click',function(){
-    if(cycle<player.length+1){//将圆圈的数字和总人数数组的长度作为判断条件，如果数组长度是6，那么圆圈的数字将取到6，所以需要数组长度加1.
+    if(cycle<player.length+1){//将圆圈的数字和总人数数组的长度作为判断条件，如果数组长度是6，那么圆圈的数字将取到6，所以需要在数组长度基础上加1.
         if(state === 1){//小女孩页面
             $('.main-top-icon-1').hide();//皇上头像隐藏
             $('.box').show();//女孩头像页显示
@@ -59,6 +59,7 @@ $('.main-bottom').on('click',function(){
             location.href = '../html/task2-4.html';
         }
     }
+    console.log(cycle);
 });
 $('.backArrow').on('click',function(){
     var b = confirm('确定要返回上一页么？');

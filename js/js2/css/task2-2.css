@@ -1,6 +1,11 @@
  html {
      font-size: 625%;
  }
+ @media only screen and (max-width: 767px){
+     html {
+         font-size: 312%;
+     }
+ }
  body {
      margin: 0;
      padding: 0;

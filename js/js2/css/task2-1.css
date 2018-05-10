@@ -1,20 +1,26 @@
 
 html {
   font-size: 625%; }
+@media only screen and (max-width: 767px){
+  html {
+    font-size: 312%;
+  }
+}
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   background-color: #F0F0F0; }
 
 header {
   position: fixed;
   top: 0;
   z-index: 999999;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background: #29BDE0;
-  line-height: .4rem; }
+  line-height: .4rem;
+}
 
 .shu {
   width: 0.5rem;
@@ -44,12 +50,12 @@ nav {
 
 .title-mark {
   float: right;
-  margin-top: -.65rem;
+  margin-top: -.6rem;
   margin-right: .1rem;
-  width: 25px;
-  height: 25px;
-  border-top: 5px solid #E7E7E7;
-  border-right: 5px  solid #E7E7E7;
+  width: .2rem;
+  height: .2rem;
+  border-top: 2px solid #E7E7E7;
+  border-right: 2px  solid #E7E7E7;
   border-bottom: none;
   border-left: none;
   transform: rotate(45deg); }
