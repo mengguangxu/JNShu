@@ -18,42 +18,42 @@ var theVoteId;//被投死玩家的身份
 
 
 if (days > 1){
-    if (step === 'vote'){//从投票赢过来的
+    if (step === 'vote'){//从投票页赢过来的
         for (var i=1; i<days; i++){
             theKillNum = (beKiller[i-1]).num;
             theKillId = (beKiller[i-1]).id;
             theVoteNum = (beVote[i-1]).num;
             theVoteId = (beVote[i-1]).id;
             var contentBox1 = '<div class=\"content-box\">\n' +
-                '        <div class=\"date\">第' + day + '天</div>\n' +
+                '        <div class=\"date\">第' + i + '天</div>\n' +
                 '        <div class=\"content-content\">晚上：' +  theKillNum + '号被杀手杀死，真实身份是' + theKillId + '</div>\n' +
                 '        <div class=\"content-bottom\">白天：' + theVoteNum + '号被全民投票投死，真实身份是' + theVoteId + '</div>\n' +
                 '    </div>';
             $('.content').append(contentBox1);
             $('.content-last').hide();
         }
-    }else if (step === 'kill'){//从杀人赢过来的
-        for (var i=1; i<days-1; i++){
-            theKillNum = (beKiller[i-1]).num;
-            theKillId = (beKiller[i-1]).id;
-            theVoteNum = (beVote[i-1]).num;
-            theVoteId = (beVote[i-1]).id;
+    }else if (step === 'kill'){//从杀人页赢过来的
+        for (var a=1; a<days-1; a++){
+            theKillNum = (beKiller[a-1]).num;
+            theKillId = (beKiller[a-1]).id;
+            theVoteNum = (beVote[a-1]).num;
+            theVoteId = (beVote[a-1]).id;
             var contentBox2 = '<div class=\"content-box\">\n' +
-                '        <div class=\"date\">第' + day + '天</div>\n' +
+                '        <div class=\"date\">第' + a + '天</div>\n' +
                 '        <div class=\"content-content\">晚上：' +  theKillNum + '号被杀手杀死，真实身份是' + theKillId + '</div>\n' +
                 '        <div class=\"content-bottom\">白天：' + theVoteNum + '号被全民投票投死，真实身份是' + theVoteId + '</div>\n' +
                 '    </div>';
             $('.content-last').before(contentBox2);
             $('#realDay').text(day);
-            $('#realNum').text((beKiller[i].num));
-            $('#realId').text((beKiller[i].id));
+            $('#realNum').text((beKiller[a].num));
+            $('#realId').text((beKiller[a].id));
         }
     }
 }
 
 
 
-if (killer === '0'){
+if (killer === 0){
     $('.main-content').text('平民胜利');
 }else if (killer === people){
     $('.main-content').text('杀手胜利');

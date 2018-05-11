@@ -1,11 +1,6 @@
 
 html {
   font-size: 625%; }
-@media only screen and (max-width: 767px){
-  html {
-    font-size: 312%;
-  }
-}
 
 body {
   padding: 0;
@@ -106,12 +101,10 @@ main {
   height: 1rem;
   background: #69D1E9;
   margin: .2rem 0;
+  font-size: .2rem;
+  color: #fff;
   cursor: pointer;
 }
-
-.box a {
-  text-decoration: none; }
-
 .version {
   font-size: .2rem;
   color: #FFF; }

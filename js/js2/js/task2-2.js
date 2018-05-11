@@ -85,8 +85,8 @@ function push(){
 function start(){
     var a = JSON.parse(sessionStorage.getItem("killer"));//JSON.parse(sessionStorage.getItem("killer"))把储存的数据获取出来，取出来的数据是字符串，需要把它变成数值。
     var b = JSON.parse(sessionStorage.getItem("people"));
-    var player=a+b;
-    if(player==inputNumber.value){
+    var player = a + b;
+    if(player == inputNumber.value){
         window.location.href = "../html/task2-3.html";
     }else {
         alert("请分配玩家身份");

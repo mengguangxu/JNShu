@@ -25,7 +25,7 @@ if(days > 1){
         theVoteId = (beVote[i-1]).id;
         console.log(theVoteId);
         var player = JSON.parse(sessionStorage.getItem('player'));
-        var inbox = '<div class=\"content\" id=\"day\">\n' +
+        var inbox = '<div class=\"content1\" >\n' +
             '        <span></span>\n' +
             '        <span class=\"day\">第'+ i + '天</span>\n' +
             '        <span class=\"icon\"></span>\n' +
@@ -33,12 +33,12 @@ if(days > 1){
             '    <div class=\"hidden1\">\n' +
             '        <div class=\"bar\">\n' +
             '            <div class=\"circular-first\"></div>\n' +
-            '            <div class=\"circular-second\"></div>\n' +
+            '            <div class=\"circular-second1\"></div>\n' +
             '        </div>\n' +
             '        <ul>\n' +
             '            <li class=\"killer\">\n' +
-            '                <div class=\"triangle1\" id=\"one1\"></div>\n' +
-            '                <span class=\"triangle2\" id="one2">杀手杀人</span>\n' +
+            '                <div class=\"triangle1\"></div>\n' +
+            '                <span class=\"triangle2\">杀手杀人</span>\n' +
             '            </li>\n' +
             '            <div class=\"box2\">\n' +
             '            <span>昨晚' + theKillNum + '号被杀，真实身份是' + theKillId + '</span>\n' +
@@ -46,41 +46,44 @@ if(days > 1){
             '        </ul>\n' +
             '        <ul>\n' +
             '            <li class=\"die\">\n' +
-            '                <div class=\"triangle1\" id="two1"></div>\n' +
-            '                <span class=\"triangle2\" id="two2">亡灵发表遗言</span>\n' +
+            '                <div class=\"triangle1\"></div>\n' +
+            '                <span class=\"triangle2\">亡灵发表遗言</span>\n' +
             '            </li>\n' +
             '        </ul>\n' +
             '        <ul>\n' +
             '            <li class=\"player\">\n' +
-            '                <div class=\"triangle1\" id="three1"></div>\n' +
-            '                <span class=\"triangle2\" id="three2">玩家依次发言</span>\n' +
+            '                <div class=\"triangle1\"></div>\n' +
+            '                <span class=\"triangle2\">玩家依次发言</span>\n' +
             '            </li>\n' +
             '        </ul>\n' +
             '        <ul>\n' +
             '            <li class=\"vote\">\n' +
-            '                <div class=\"triangle1\" id="four1"></div>\n' +
-            '                <span class=\"triangle2\" id="four2">投票</span>\n' +
+            '                <div class=\"triangle1\"></div>\n' +
+            '                <span class=\"triangle2\">投票</span>\n' +
             '            </li>\n' +
             '        </ul>\n' +
             '            <div class=\"box2\">\n' +
             '            <span>昨晚' + theVoteNum + '号被投死，真实身份是' +  theVoteId + '</span>\n' +
             '            </div>\n' +
             '    </div>';
-        $('#main').before(inbox);
-        console.log(inbox);
-//控制下拉菜单的显示与隐藏
-        $('#day').on('click',function(){
-            var hidden = $('.hidden1');
-            if(hidden.is(':visible')){
-                hidden.slideUp();
-            }else{
-                hidden.slideDown();
-            }
-        });
+        $('.content').before(inbox);
+        $('.hidden1').hide();
     }
 }
 
-
+//控制下拉菜单的显示与隐藏
+$('.content1').on('click',function(){
+    // $(this).next().toggle("normal");
+    var z = $('.content1').index(this);//$(this).index();获取的是与content同级的所有元素的下标，不同的类名但是同级也会获取它的下标，要想获取同级的相同一组类名的下标需要写成$('.content').index(this)，也就是获取到的是content类名同级的元素下标，类名不同不会算在内
+    var theHidden = $('.hidden1');
+    $(theHidden[z]).slideToggle();
+});
+$('.content').on('click',function(){
+    // $(this).next().toggle("normal");
+    var z = $('.content').index(this);//$(this).index();获取的是与content同级的所有元素的下标，不同的类名但是同级也会获取它的下标，要想获取同级的相同一组类名的下标需要写成$('.content').index(this)，也就是获取到的是content类名同级的元素下标，类名不同不会算在内
+    var theHidden = $('.hidden');
+    $(theHidden[z]).slideToggle();
+});
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var theStates;//var一个变量来存储当前状态
@@ -118,14 +121,14 @@ var fsm = {
         switch(theStates){
             case'ghost':
                 console.log(theStates);
-                confirm('亡灵发表遗言');
+                alert('亡灵发表遗言');
                 $('#two1').css('borderRightColor','#82af9a');
                 $('#two2').css('backgroundColor','#82af9a');
                 sessionStorage.setItem('sate','ghost');
                 theStates = 'speak';
                 break;
             case'kill':
-                alert('不要重复点击');
+                alert('请按顺序游戏');
                 break;
             case'speak':
                 alert('请按顺序游戏');
@@ -139,10 +142,10 @@ var fsm = {
         switch(theStates){
             case'kill':
                 console.log(theStates);
-                alert('不要重复点击');
+                alert('请按顺序游戏');
                 break;
             case'ghost':
-                alert('不要重复点击');
+                alert('请按顺序游戏');
                 break;
             case'speak':
                 alert('玩家依次发言');
