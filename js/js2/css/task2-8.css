@@ -106,7 +106,9 @@ main {
     font-size: .15rem;
     color: #D7D7D7;
     padding-bottom: .1rem; }
-
+.content-last {
+    border-bottom: 1px solid #D7D7D7;
+}
 
 footer {
     position: fixed;

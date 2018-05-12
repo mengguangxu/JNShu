@@ -36,34 +36,34 @@ if(days > 1){
             '            <div class=\"circular-second1\"></div>\n' +
             '        </div>\n' +
             '        <ul>\n' +
-            '            <li class=\"killer\">\n' +
+            '            <li>\n' +
             '                <div class=\"triangle1\"></div>\n' +
             '                <span class=\"triangle2\">杀手杀人</span>\n' +
             '            </li>\n' +
             '            <div class=\"box2\">\n' +
-            '            <span>昨晚' + theKillNum + '号被杀，真实身份是' + theKillId + '</span>\n' +
+            '            <span>' + theKillNum + '号被杀，真实身份是' + theKillId + '</span>\n' +
             '            </div>\n' +
             '        </ul>\n' +
             '        <ul>\n' +
-            '            <li class=\"die\">\n' +
+            '            <li>\n' +
             '                <div class=\"triangle1\"></div>\n' +
             '                <span class=\"triangle2\">亡灵发表遗言</span>\n' +
             '            </li>\n' +
             '        </ul>\n' +
             '        <ul>\n' +
-            '            <li class=\"player\">\n' +
+            '            <li>\n' +
             '                <div class=\"triangle1\"></div>\n' +
             '                <span class=\"triangle2\">玩家依次发言</span>\n' +
             '            </li>\n' +
             '        </ul>\n' +
             '        <ul>\n' +
-            '            <li class=\"vote\">\n' +
+            '            <li>\n' +
             '                <div class=\"triangle1\"></div>\n' +
             '                <span class=\"triangle2\">投票</span>\n' +
             '            </li>\n' +
             '        </ul>\n' +
             '            <div class=\"box2\">\n' +
-            '            <span>昨晚' + theVoteNum + '号被投死，真实身份是' +  theVoteId + '</span>\n' +
+            '            <span>' + theVoteNum + '号被投死，真实身份是' +  theVoteId + '</span>\n' +
             '            </div>\n' +
             '    </div>';
         $('.content').before(inbox);
@@ -124,8 +124,9 @@ var fsm = {
                 alert('亡灵发表遗言');
                 $('#two1').css('borderRightColor','#82af9a');
                 $('#two2').css('backgroundColor','#82af9a');
-                sessionStorage.setItem('sate','ghost');
                 theStates = 'speak';
+                sessionStorage.setItem('sate','speak');
+                console.log(theStates);
                 break;
             case'kill':
                 alert('请按顺序游戏');
@@ -141,18 +142,19 @@ var fsm = {
     toSpeak: function (){
         switch(theStates){
             case'kill':
-                console.log(theStates);
                 alert('请按顺序游戏');
                 break;
             case'ghost':
                 alert('请按顺序游戏');
                 break;
             case'speak':
+                console.log(theStates);
                 alert('玩家依次发言');
                 $('#three1').css('borderRightColor','#82af9a');
                 $('#three2').css('backgroundColor','#82af9a');
-                sessionStorage.setItem('sate','speak');
                 theStates = 'poll';
+                sessionStorage.setItem('sate','poll');
+                console.log(theStates);
                 break;
             case'poll':
                 alert('请按顺序游戏');
