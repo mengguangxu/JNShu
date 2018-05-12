@@ -66,16 +66,19 @@ function push(){
     var x=inputNumber.value;
     var y=killer.value;
     var w=people.value;
-    if (x<5){
+    if (x<9){
         y=1;
         w=x-y;
-    }else if (x<10){
+    }else if (x<12){
             y=2;
             w=x-y;
-        }else if (x<=18){
-                y=4;
+        }else if (x<16){
+                y=3;
                 w=x-y;
-            }
+            }else if (x<=18){
+        y=4;
+        w=x-y;
+    }
     killer.innerHTML=y;
     people.innerHTML=w;
     sessionStorage.setItem("killer", JSON.stringify(y));//JSON.stringify(y)把数值转换为JSON字符串，sessionStorage只储存字符串
