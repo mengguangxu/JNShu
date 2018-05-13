@@ -121,7 +121,7 @@
      font-size: .2rem;
      color: #29bde0;
  }
- .content {
+ form {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -130,7 +130,7 @@
      margin-top: .2rem;
      background-color: #fff;
  }
- .content input {
+ form input {
      width: 95%;
      padding: .1rem 0;
      margin-bottom: .1rem;
@@ -142,7 +142,7 @@
      outline:none;
      text-decoration: none;
  }
- .content input::placeholder {
+ form input::placeholder {
      font-family: "宋体", sans-serif;
      font-size: .17rem;
      color: #b4b4b4;

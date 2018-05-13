@@ -49,7 +49,6 @@ function btLeft(){
         alert("人数不足，请凑好再来");
         inputNumber.value = 4;
     }
-
 }
 //加号按钮与滚动条同步
 function btRight(){
@@ -59,7 +58,6 @@ function btRight(){
         alert("人数太多，请分开游戏");
         inputNumber.value = 18;
     }
-
 }
 //设置杀手和平民人数
 function push(){
