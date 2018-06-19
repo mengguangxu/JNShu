@@ -63,6 +63,9 @@ function color(){
     box[a[0]].style.backgroundColor = arr();
     box[a[1]].style.backgroundColor = arr();
     box[a[2]].style.backgroundColor = arr();
+    console.log(a[0]);
+    console.log(a[1]);
+    console.log(a[2]);
 
     //第三种方法
 

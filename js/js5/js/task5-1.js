@@ -1,5 +1,5 @@
 // 原生js
- var word = document.getElementById('word');
+/* var word = document.getElementById('word');
  var user = document.getElementById("user");
  var pwd = document.getElementById("pwd");
 $('#start').on('click',function(){
@@ -30,9 +30,8 @@ $('#start').on('click',function(){
         }
     }
     }
- });
+ });*/
 //jquery方法
-/*
 $('#start').on('click',function(){
    $.ajax({
        url: '/carrots-admin-ajax/a/login',//请求地址
@@ -54,4 +53,3 @@ $('#start').on('click',function(){
        }
    });
 });
-*/
