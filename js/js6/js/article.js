@@ -40,67 +40,67 @@ myApp.controller('artCtrl',function($http,$scope,$state,$stateParams,list,indust
         });
     }
 
-    //选择文件
-    $scope.fileReader = new FileReader();//创建FileReader接口
-    $scope.fileChanged = function(respond){
-        $scope.$apply(function(){
-            console.log(respond);
-            $scope.files = respond.files[0];//保存要上传的图片信息到files,.respond.files[0]表示选择第一个上传的文件的数据。input标签设置了multiple属性的话，当上传两个文件时，则ele.files[1]可以选择到第二个上传的文件的数据。
-            console.log($scope.files);
-            $scope.input = respond; //保存input file这个DOM节点
-            console.log($scope.input);
-            $scope.fileName = $scope.files.name;//文件的名
-            console.log($scope.fileName);
-            $scope.fileSize = $scope.files.size/1024/1024;//文件大小
-            console.log($scope.fileSize);
-            $scope.progress=0;
-        });
-    };
+    // //选择文件
+    // $scope.fileReader = new FileReader();//创建FileReader接口
+    // $scope.fileChanged = function(respond){
+    //     $scope.$apply(function(){
+    //         console.log(respond);
+    //         $scope.files = respond.files[0];//保存要上传的图片信息到files,.respond.files[0]表示选择第一个上传的文件的数据。input标签设置了multiple属性的话，当上传两个文件时，则ele.files[1]可以选择到第二个上传的文件的数据。
+    //         console.log($scope.files);
+    //         $scope.input = respond; //保存input file这个DOM节点
+    //         console.log($scope.input);
+    //         $scope.fileName = $scope.files.name;//文件的名
+    //         console.log($scope.fileName);
+    //         $scope.fileSize = $scope.files.size/1024/1024;//文件大小
+    //         console.log($scope.fileSize);
+    //         $scope.progress=0;
+    //     });
+    // };
 
-    // 上传图片
-    $scope.upload = function(){
-        //创建FormData用来存放上传的参数
-        var formData = new FormData();
-        //调用FileReader对象的方法，readAsDataURL该方法将文件读取为一段以 data: 开头的字符串，这段字符串的实质就是 Data URL，Data URL是一种将小文件直接嵌入文档的方案。这里的小文件通常是指图像与 html 等格式的文件
-        $scope.fileReader.readAsDataURL($scope.files);
-        //用append()方法以键值对的形式把参数存入formData中，按照接口文档请求参数key为file，value为上传的文件
-        formData.append("file",$scope.files);
-        console.log($scope.fileSize);
-        if($scope.fileSize <= 5242880){
-            $http({
-                method: 'post',
-                url: '/carrots-admin-ajax/a/u/img/task',
-                data: formData,
-                headers:{"Content-Type":undefined},
-                //将事件侦听器绑定到XMLHttpRequest上传对象。用来监听progress事件，这个事件会在读取中时会触发。
-                uploadEventHandlers: {
-                    progress: function(respond){
-                        console.log(respond);
-                        //respond.loaded为已上传文件的大小，respond.total为要上传文件的总大小。两者相除得到的$scope.progress值是用来表示进度条的
-                        $scope.progress = (respond.loaded/respond.total)*100;
-                        console.log($scope.progress);
-                    }
-                }
-            }).then(function successCallback(respond){
-                $scope.status = respond.data.message;
-                $scope.src = respond.data.data.url;
-                console.log($scope.src);
-                $scope.okIcon=true;
-            });
-        }else{
-            alert('文件大于5MB');
-            $scope.removeIcon=true;
-        }
-    };
-
-    //删除图片
-    $scope.delete = function(){
-        $scope.src = undefined;
-        $scope.fileName = '';
-        $scope.progress = 0;
-        $scope.input.value = '';// 防止删除一个文件后不能再次上传同一个文件的问题
-        $scope.okIcon=false;
-    };
+    // // 上传图片
+    // $scope.upload = function(){
+    //     //创建FormData用来存放上传的参数
+    //     var formData = new FormData();
+    //     //调用FileReader对象的方法，readAsDataURL该方法将文件读取为一段以 data: 开头的字符串，这段字符串的实质就是 Data URL，Data URL是一种将小文件直接嵌入文档的方案。这里的小文件通常是指图像与 html 等格式的文件
+    //     $scope.fileReader.readAsDataURL($scope.files);
+    //     //用append()方法以键值对的形式把参数存入formData中，按照接口文档请求参数key为file，value为上传的文件
+    //     formData.append("file",$scope.files);
+    //     console.log($scope.fileSize);
+    //     if($scope.fileSize <= 5242880){
+    //         $http({
+    //             method: 'post',
+    //             url: '/carrots-admin-ajax/a/u/img/task',
+    //             data: formData,
+    //             headers:{"Content-Type":undefined},
+    //             //将事件侦听器绑定到XMLHttpRequest上传对象。用来监听progress事件，这个事件会在读取中时会触发。
+    //             uploadEventHandlers: {
+    //                 progress: function(respond){
+    //                     console.log(respond);
+    //                     //respond.loaded为已上传文件的大小，respond.total为要上传文件的总大小。两者相除得到的$scope.progress值是用来表示进度条的
+    //                     $scope.progress = (respond.loaded/respond.total)*100;
+    //                     console.log($scope.progress);
+    //                 }
+    //             }
+    //         }).then(function successCallback(respond){
+    //             $scope.status = respond.data.message;
+    //             $scope.src = respond.data.data.url;
+    //             console.log($scope.src);
+    //             $scope.okIcon=true;
+    //         });
+    //     }else{
+    //         alert('文件大于5MB');
+    //         $scope.removeIcon=true;
+    //     }
+    // };
+    //
+    // //删除图片
+    // $scope.delete = function(){
+    //     $scope.src = undefined;
+    //     $scope.fileName = '';
+    //     $scope.progress = 0;
+    //     $scope.input.value = '';// 防止删除一个文件后不能再次上传同一个文件的问题
+    //     $scope.okIcon=false;
+    // };
 
     //上线
     $scope.upLine = function(){
