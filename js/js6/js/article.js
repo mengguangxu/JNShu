@@ -1,4 +1,4 @@
-myApp.controller('artCtrl',function($http,$scope,$state,$stateParams,list,industry1){
+angular.module('myApp').controller('artCtrl',function($http,$scope,$state,$stateParams,list,industry1){
     $scope.list = list;
     $scope.industry1 = industry1;
     $scope.id = $state.params.id;//传过来的参数id值赋值给$scope.id

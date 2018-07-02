@@ -1,5 +1,5 @@
 
-myApp.controller('myCtrl',function($scope,$http,$state){
+angular.module('myApp').controller('myCtrl',function($scope,$http,$state){
     $scope.start = function(){
         $http({
             method: 'post',

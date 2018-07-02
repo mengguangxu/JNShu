@@ -1,7 +1,8 @@
 var myApp = angular.module("myApp",['ui.router','ui.bootstrap','ng.ueditor']);
-myApp.config(function($stateProvider,$urlRouterProvider){
+myApp.config(function($stateProvider,$urlRouterProvider, $locationProvider){
 
-    $urlRouterProvider.when("", "/login");
+    $locationProvider.html5Mode(true);
+    $urlRouterProvider.when("/", "/login");
 
     $stateProvider
         .state("login",{

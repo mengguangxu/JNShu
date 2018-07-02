@@ -1,4 +1,4 @@
-myApp.controller('listCtrl',function($http,$scope,$state, $stateParams, list,listStatus,down){  //自己命名的名字，必须要把它写在函数的参数中，否则无法调用
+angular.module('myApp').controller('listCtrl',function($http,$scope,$state, $stateParams, list,listStatus,down){  //自己命名的名字，必须要把它写在函数的参数中，否则无法调用
     //取出来要repeat的常量，储存起来
     $scope.list = list;//类型
     $scope.listStatus = listStatus;//状态

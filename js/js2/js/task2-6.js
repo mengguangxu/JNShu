@@ -81,9 +81,11 @@
         $(choice[a]).css('visibility','visible');//通过数组下标选择单个小图标显示
         pitch = 1;//已选中玩家
     });
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
     //点击确认按钮
     $('#bt').click(function () {
+        console.log(newState);
         if(pitch === 1){
             if(newState === 'live'){
                 if(getSet === 'ghost'){

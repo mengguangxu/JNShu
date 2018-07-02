@@ -1,4 +1,4 @@
-myApp.controller('backCtrl',function($scope, $http, $state, sidebarList){
+angular.module('myApp').controller('backCtrl',function($scope, $http, $state, sidebarList){
     $scope.welcome = "Hello,Welcome";
     $scope.quit =function(){
         $http({
